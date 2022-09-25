@@ -1,0 +1,49 @@
+<head>
+    <title>Hand Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1-0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1 style="font-size: 50px;word-spacing: 5px;" class="btn btn-info">GESTURE WEB APP
+        <br>
+        <span>&#9996;</span>
+        <span>&#128076;</span>
+        <span>&#129304;</span>
+        <span>&#128077;</span>
+    </h1>
+    <h1>Take a selfie of a gesture to know about it's meaning.</h1>
+    <h3>On the following gestures the model is trained - </h3>
+    <h1>
+        <span>&#9996;</span>|<span>&#128076;</span>|<span>&#129304;</span>|<span>&#128077;</span>
+    </h1>
+    <br>
+    <br>
+    <br>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1 - </label>
+        <p id="hand-pose-pre"></p>
+
+        <label>Prediction 2 - </label>
+        <p id="hand-pose-pre2"></p>
+      </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Predict Emotion</button>
+       </div>
+<body>

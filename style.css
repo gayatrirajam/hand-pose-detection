@@ -1,0 +1,11 @@
+body{
+    background: radial-gradient(rgb(109, 109, 255) 0%, rgb(181, 215, 239), rgb(109, 109, 255), rgb(181, 215, 239) 100%);
+    color: white;
+}
+label{
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    font-size: 20px;
+}
