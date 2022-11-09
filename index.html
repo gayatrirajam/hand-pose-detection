@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,17 +34,16 @@
     </div>
 
     <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Prediction 1 - </label>
-        <p id="hand-pose-pre"></p>
-
-        <label>Prediction 2 - </label>
-        <p id="hand-pose-pre2"></p>
+        <label>Prediction - </label>
+        <p id="result_object_name"></p>
+        <p id="gesture_icon"></p>
       </div>
 
     <div class="col-md-4 col-sm-12 col-xs-12">
         <label>Snapshot - </label>
         <div id="result"></div>
         <br><br>
-        <button onclick="check();" class="btn btn-success">Predict Emotion</button>
+        <button onclick="check();" class="btn btn-success">Predict What Hand Pose</button>
        </div>
-<body>
+       <script src="handpose.js"></script>
+    </body>
